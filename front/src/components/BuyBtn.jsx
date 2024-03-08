@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const BuyBtn = () => {
+const BuyBtn = ({ id_produit }) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "https://js.stripe.com/v3/buy-button.js";
@@ -14,7 +14,7 @@ const BuyBtn = () => {
 
   return (
     <stripe-buy-button
-      buy-button-id="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX"
+      buy-button-id={id_produit}
       publishable-key="pk_test_51OsAfMFDP4bEYovMxgekldjZEbHkuvuZRq2HfCLbG2KnvjIXioJ9xmDdIVA1Ebg6MVN863hgNl1FMGhCkDi6HAj10051QD7oLX"
     />
   );
