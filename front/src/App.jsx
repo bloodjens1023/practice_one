@@ -5,6 +5,7 @@ import Chat from './pages/Chat'
 import InfoFako from './pages/InfoFako';
 import Profil from './pages/Profil';
 import VenteFako from './pages/VenteFako';
+import Connexion from './pages/Connexion';
 
 
 
@@ -12,7 +13,8 @@ import VenteFako from './pages/VenteFako';
 function App() {
   return (
     <Routes >
-      <Route path="/" Component={Acceuil} />
+      <Route path="/" Component={Connexion} />
+      <Route path="/acceuil" Component={Acceuil} />
       <Route path="/chat" Component={Chat}/>
       <Route path="/info" Component={InfoFako}/>
       <Route path="/profil" Component={Profil} />
