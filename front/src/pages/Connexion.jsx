@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Bouton from '../components/Bouton';
-
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Connexion() {
+    const navigate = useNavigate();
     const [nom, setNom] = useState('');
     const [description, setDescription] = useState('');
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -19,8 +20,9 @@ export default function Connexion() {
         setDescription('');
 
         setTimeout(() => {
-            window.location.href = '/acceuil';
-        }, 2000);
+            navigate('/acceuil')
+        
+        }, 200);
     };
 
     // if (formSubmitted) {

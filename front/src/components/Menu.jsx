@@ -4,7 +4,7 @@ export default function Menu(){
     return(
         <div className="menu">
             <ul>
-                <li><NavLink to="/">Acceuil</NavLink></li>
+                <li><NavLink to="/acceuil">Acceuil</NavLink></li>
                 <li><NavLink to="/chat">Chat</NavLink></li>
                 <li><NavLink to="/info">Info fako</NavLink></li>
                 <li><NavLink to="/profil">Profil</NavLink></li>
