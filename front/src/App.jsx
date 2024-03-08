@@ -1,17 +1,17 @@
-import { useState } from 'react'
 import './App.css'
 import Acceuil from './pages/Acceuil'
-import Menu from './components/Menu'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Chat from './pages/Chat'
 
 
 
 
 function App() {
   return (
-    <>
-      <Menu />
-      <Acceuil />
-    </>
+    <Routes >
+      <Route path="/" Component={Acceuil} />
+      <Route path="/chat" Component={Chat}/>
+    </Routes>
   )
 }
 

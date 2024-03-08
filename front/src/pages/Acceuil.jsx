@@ -1,5 +1,9 @@
+import Menu from '../components/Menu'
 export default function Acceuil(){
     return (
-        <h1>Page d'acceuil</h1>
+        <>
+            <Menu/>
+            <h1>Page d'acceuil</h1>
+        </>
     )
 }
