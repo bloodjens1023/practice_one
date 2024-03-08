@@ -1,5 +1,10 @@
+import Menu from "../components/Menu";
+
 export default function Chat(){
     return(
-        <h1>Page de chat</h1>
+        <>
+            <Menu />
+            <h1>Page de chat</h1>
+        </>
     )
 }

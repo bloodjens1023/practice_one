@@ -1,5 +1,10 @@
+import Menu from "../components/Menu";
+
 export default function VenteFako(){
     return (
-        <h1>Page Vente fako</h1>
+        <>
+            <Menu />
+            <h1>vente fako</h1>
+        </>
     )
 }

@@ -5,10 +5,10 @@ export default function Menu(){
         <div className="menu">
             <ul>
                 <li><NavLink to="/">Acceuil</NavLink></li>
-                <li><NavLink to="chat">Chat</NavLink></li>
-                <li>Info fako</li>
-                <li>Profil</li>
-                <li>Vente fako</li>
+                <li><NavLink to="/chat">Chat</NavLink></li>
+                <li><NavLink to="/info">Info fako</NavLink></li>
+                <li><NavLink to="/profil">Profil</NavLink></li>
+                <li><NavLink to="/vente">Vente fako</NavLink></li>
             </ul>
         </div>
     )

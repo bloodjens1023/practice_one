@@ -1,5 +1,10 @@
+import Menu from "../components/Menu";
+
 export default function Profil(){
     return (
-        <h1>Page profil</h1>
+        <>
+            <Menu />
+            <h1>Page profil</h1>
+        </>
     )
 }
