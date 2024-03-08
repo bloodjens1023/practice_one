@@ -21,7 +21,7 @@ const Carduser = () => {
                 </g>
                 <path className="darkcolor greendark" d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z" />
               </g>
-              <text transform="matrix(1 0 0 1 320 110)" id="svgnumber" className="st2 st3 st4">Trash Coin 🧺</text>
+              <text transform="matrix(1 0 0 1 400 110)" id="svgnumber" className="st2 st3 st4">Trash Coin</text>
               <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" className="st2 st3 st4">0123 4567 8910 1112</text>
               <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" className="st2 st5 st6">Jenny RAKOTOHASIMBOLA</text>
               <text transform="matrix(1 0 0 1 54.1074 389.8793)" className="st7 st5 st8">Propriétaire</text>
