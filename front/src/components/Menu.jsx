@@ -29,7 +29,7 @@ export default function Menu() {
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
-                  }}>Home</NavLink>
+                  }}>Acceuil</NavLink>
                   
                
               </div>
@@ -39,7 +39,7 @@ export default function Menu() {
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
-                  }}>About</NavLink>
+                  }}>A propos</NavLink>
                
               </div>
               <div className="col colaps">
@@ -60,7 +60,7 @@ export default function Menu() {
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
-                  }}>Store</NavLink>
+                  }}>Marcher</NavLink>
                 
               </div>
               <div className="col colaps">

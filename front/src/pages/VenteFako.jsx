@@ -6,13 +6,29 @@ export default function VenteFako(){
         <>
             <Menu />
             <h1>vente fako</h1>
-            <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
-            <BuyBtn id_produit ="buy_btn_1OsCgZFDP4bEYovMCAPRQ50X" />
-            <BuyBtn id_produit ="buy_btn_1OsCqKFDP4bEYovMH0NPhq5Q" />
-            <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
-            <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
-            <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
-            <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
+            <center>
+                <div style={{margin:"10px" , display:"grid", gridTemplateColumns:"repeat(3, 1fr)"}}>
+                    <div className="div" style={{margin:"10px"}}>
+                        <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
+                    </div>
+                    <div className="div" style={{margin:"10px"}}>
+                        <BuyBtn id_produit ="buy_btn_1OsCqKFDP4bEYovMH0NPhq5Q" />
+                    </div>
+                    <div className="div" style={{margin:"10px"}}>
+                        <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
+                    </div>
+                    <div className="div" style={{margin:"10px"}}>
+                        <BuyBtn id_produit ="buy_btn_1OsCqKFDP4bEYovMH0NPhq5Q" />
+                    </div>
+                    <div className="div" style={{margin:"10px"}}>
+                        <BuyBtn id_produit ="buy_btn_1OsCgZFDP4bEYovMCAPRQ50X" />
+                    </div>
+                    <div className="div" style={{margin:"10px"}}>
+                        <BuyBtn id_produit ="buy_btn_1OsAvYFDP4bEYovMPIOPjZfX" />
+                    </div>
+        
+                </div>
+            </center>
         </>
     )
 }
