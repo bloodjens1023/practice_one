@@ -25,8 +25,7 @@ export default function InfoFako(){
         <>
             <Menu />
             <Input value={recherche} placeholder = "rechercher .." onChange={setRecherche}/>
-            <div>
-                <h1>Liste des ordures</h1>
+            <div className="card-group">
                 {
                     produit.map((ordure, i) =>(
                         <CardeProduit
