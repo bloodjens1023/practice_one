@@ -6,7 +6,7 @@ export default function Menu() {
   return (
     <nav
       className="navbar navbar-expand-lg portfolio-navbar"
-      style={{ backgroundColor: "#153330", flex: 1 ,display:"flex", alignItems:"center", justifyContent:"center"}}
+      style={{ paddingLeft:'15px',backgroundColor: "#153330", flex: 1 ,display:"flex", alignItems:"center", justifyContent:"center"}}
 
     >
       <div className="" >
