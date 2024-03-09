@@ -24,13 +24,13 @@ export default function Menu() {
               <div className="col colaps">
                 
                   
-                  <li>
+                  
                     <NavLink to="/acceuil" style={{
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
                   }}>Home</NavLink>
-                  </li>
+                  
                
               </div>
               <div className="col colaps">
