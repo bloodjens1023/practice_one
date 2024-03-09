@@ -37,6 +37,7 @@ export default function Menu() {
                 
                   <NavLink to="/about" style={{
                     fontSize: "20px",
+                    width:"80px",  
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
                   }}>A propos</NavLink>
@@ -58,6 +59,7 @@ export default function Menu() {
                 
                   <NavLink to="/vente" style={{
                     fontSize: "20px",
+                    width:"80px",  
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
                   }}>Marcher</NavLink>

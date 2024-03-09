@@ -1,8 +1,35 @@
 import Menu from '../components/Menu'
-
 import React from 'react';
-
+import 'react-slideshow-image/dist/styles.css'
+import { Slide } from 'react-slideshow-image';
 function Acceuil() {
+    const spanStyle = {
+        padding: '20px',
+        background: '#efefef',
+        color: '#000000'
+      }
+      
+      const divStyle = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundSize: 'cover',
+        height: '400px'
+      }
+      const slideImages = [
+        {
+          url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+          caption: 'Slide 1'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+          caption: 'Slide 2'
+        },
+        {
+          url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+          caption: 'Slide 3'
+        },
+      ];
     return (
         <div>
             <Menu/>
@@ -132,25 +159,16 @@ function Acceuil() {
                     <div className="col-md-12" style={{ background: "#ffffff", marginTop: "50px" }}>
                         <h1 style={{ textAlign: "center", color: "#f96c27", fontFamily: "Montserrat, sans-serif", fontSize: "70px", margin: "8px", marginBottom: "30px", fontWeight: "bold" }}>Nos produits</h1>
                     </div>
-                    <div className="col" style={{ background: "#ffffff" }}>
-                        <div className="simple-slider">
-                            <div className="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-                                <div className="swiper-wrapper" id="swiper-wrapper-d112723784f651b9" aria-live="polite" style={{ transitionDuration: "0ms", transform: "translate3d(-1116px, 0px, 0px)" }}>
-                                    <div className="swiper-slide swiper-slide-duplicate swiper-slide-prev" style={{ background: "url(\"https://cdn.bootstrapstudio.io/placeholders/1400x800.png\") center center / cover no-repeat", width: "1116px" }} data-swiper-slide-index="2" role="group" aria-label="1 / 5"></div>
-                                    <div className="swiper-slide swiper-slide-active" style={{ background: "url(\"https://cdn.bootstrapstudio.io/placeholders/1400x800.png\") center center / cover no-repeat", width: "1116px" }} data-swiper-slide-index="0" role="group" aria-label="2 / 5"></div>
-                                    <div className="swiper-slide swiper-slide-next" style={{ background: "url(\"https://cdn.bootstrapstudio.io/placeholders/1400x800.png\") center center / cover no-repeat", width: "1116px" }} data-swiper-slide-index="1" role="group" aria-label="3 / 5"></div>
-                                    <div className="swiper-slide swiper-slide-duplicate-prev" style={{ background: "url(\"https://cdn.bootstrapstudio.io/placeholders/1400x800.png\") center center / cover no-repeat", width: "1116px" }} data-swiper-slide-index="2" role="group" aria-label="4 / 5"></div>
-                                </div>
-                                <div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                                    <span className="swiper-pagination-bullet swiper-pagination-bullet-active" tabIndex="0" role="button" aria-label="Go to slide 1"></span>
-                                    <span className="swiper-pagination-bullet" tabIndex="0" role="button" aria-label="Go to slide 2"></span>
-                                    <span className="swiper-pagination-bullet" tabIndex="0" role="button" aria-label="Go to slide 3"></span>
-                                </div>
-                                <div className="swiper-button-prev" tabIndex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d112723784f651b9"></div>
-                                <div className="swiper-button-next" tabIndex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d112723784f651b9"></div>
-                                <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <div className="slide-container">
+                        <Slide>
+                        {slideImages.map((slideImage, index)=> (
+                            <div key={index}>
+                            <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+                                <span style={spanStyle}>{slideImage.caption}</span>
                             </div>
-                        </div>
+                            </div>
+                        ))} 
+                        </Slide>
                     </div>
                 </div>
                 

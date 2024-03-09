@@ -11,6 +11,7 @@
   },
   "proxy": "http://localhost:8080",
   "dependencies": {
+    "@babel/runtime": "^7.24.0",
     "@stripe/react-stripe-js": "^2.5.1",
     "@stripe/stripe-js": "^3.0.7",
     "axios": "^1.6.7",
@@ -19,7 +20,9 @@
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "react-slideshow-image": "^4.3.0",
+    "react-slidy": "^4.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
