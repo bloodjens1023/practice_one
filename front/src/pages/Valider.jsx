@@ -41,7 +41,7 @@ const Valider = () => {
           </center>
           <center>
             <div className="containers">
-              <button className="btn" style={{ alignItems: "center", justifyContent: "center" }} onClick={handleFermerClick}>
+              <button className="btns" style={{ alignItems: "center", justifyContent: "center" }} onClick={handleFermerClick}>
                 Fermer
               </button>
             </div>

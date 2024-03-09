@@ -1,11 +1,14 @@
+.colaps{
+    display: flex;
+    align-items: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     
     margin-top: 50px;
     margin-bottom: 80px;
@@ -93,7 +96,7 @@
     cursor: pointer;
   }
   
-  .btn {
+  .btns {
     background-color: #F9E450;
     border: 2px solid #1B1B1B;
     box-sizing: border-box;
@@ -115,7 +118,7 @@
     transition: 0.16s ease-out;
   }
   
-  .btn:hover {
+  .btns:hover {
     background: #FFBB38;
     border: 4px solid #1B1B1B;
     box-sizing: border-box;
@@ -203,9 +206,11 @@ input {
 .container {
     width: 100%;
     max-width: 400px;
-    max-height: 251px;
-    height: 54vw;
-    padding: 20px;
+    max-height: 130px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #ccsingle {
@@ -427,11 +432,9 @@ input {
     font-size: 37.769px;
 }
 
-/* FLIP ANIMATION */
-.container {
-    perspective: 1000px;
+.lien{
+    color: white;
 }
-
 .creditcard {
     width: 100%;
     max-width: 400px;

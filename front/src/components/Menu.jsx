@@ -6,9 +6,10 @@ export default function Menu() {
   return (
     <nav
       className="navbar navbar-expand-lg portfolio-navbar"
-      style={{ backgroundColor: "#153330", flex: 1 }}
+      style={{ backgroundColor: "#153330", flex: 1 ,display:"flex", alignItems:"center", justifyContent:"center"}}
+
     >
-      <div className="container">
+      <div className="" >
         <button
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav-1"
@@ -20,71 +21,55 @@ export default function Menu() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav ms-auto">
             <div className="row">
-              <div className="col">
-                <li
-                  className="nav-link active"
-                  style={{
-                    fontSize: "20px",
-                    fontFamily: "Montserrat, sans-serif",
-                    color: "#ffffff",
-                  }}
-                >
-                  {" "}
+              <div className="col colaps">
+                
+                  
                   <li>
-                    <NavLink to="/acceuil">Home</NavLink>
-                  </li>
-                </li>
-              </div>
-              <div className="col">
-                <li
-                  className="nav-link"
-                  href="hire-me.html"
-                  style={{
+                    <NavLink to="/acceuil" style={{
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
-                  }}
-                >
-                  <NavLink to="/about">About</NavLink>
-                </li>
+                  }}>Home</NavLink>
+                  </li>
+               
               </div>
-              <div className="col">
+              <div className="col colaps">
+                
+                  <NavLink to="/about" style={{
+                    fontSize: "20px",
+                    fontFamily: "Montserrat, sans-serif",
+                    color: "#ffffff",
+                  }}>About</NavLink>
+               
+              </div>
+              <div className="col colaps">
                 <NavLink to="/profil">
                   <div
                     style={{
-                      width: "100px",
-                      height: "100px",
-                      background: "#ffffff",
-                      borderRadius: "50%",
-                    }}
+                        width: "100px",
+                        height: "100px",
+                        background: "#ffffff",
+                        borderRadius: "50%",
+                      }}
                   ></div>
                 </NavLink>
               </div>
-              <div className="col">
-                <a
-                  className="nav-link active"
-                  href="#"
-                  style={{
+              <div className="col colaps">
+                
+                  <NavLink to="/vente" style={{
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
-                  }}
-                >
-                  <NavLink to="/vente">Store</NavLink>
-                </a>
+                  }}>Store</NavLink>
+                
               </div>
-              <div className="col">
-                <li
-                  className="nav-link active"
-                  href="#"
-                  style={{
+              <div className="col colaps">
+                  <NavLink to="/info"  style={{
                     fontSize: "20px",
                     fontFamily: "Montserrat, sans-serif",
                     color: "#ffffff",
-                  }}
-                >
-                  <NavLink to="/info">Infofako</NavLink>
-                </li>
+                  }}>Infofako</NavLink>
+                
               </div>
             </div>
           </div>
